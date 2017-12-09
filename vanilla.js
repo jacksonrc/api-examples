@@ -29,8 +29,7 @@ request.onload = function() {
             header.textContent = movie.title;
 
             const p = document.createElement('p');
-            p.textContent = movie.description.substring(0, 300);
-            p.textContent = `${movie.description}...`;
+            p.textContent = `${movie.description.substring(0, 500)}...`;
 
             container.appendChild(card);
             card.appendChild(header);
